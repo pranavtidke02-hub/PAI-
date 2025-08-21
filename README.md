@@ -93,3 +93,11 @@ mov [result], al
 mov eax, 1 
 xor ebx, ebx 
 int 0x80
+
+#ADDITION OF 16-BIT 
+global _start:
+section .text
+_start:
+	mov ax , 30FAH
+	MOV bx , 595BH
+	add ax, bx
