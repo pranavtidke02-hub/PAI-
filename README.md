@@ -101,3 +101,13 @@ _start:
 	mov ax , 30FAH
 	MOV bx , 595BH
 	add ax, bx
+
+
+ #MULTIPLICATION OF 8-BIT
+ global _start
+section .text
+
+_start:
+    mov al, 10     
+    mov bl, 100     
+    mul bl
