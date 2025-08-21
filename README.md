@@ -67,3 +67,29 @@ _start:
 (gdb) layout asm
 (gdb) layout regs
 (gdb) nexti
+
+#BASIC AIRTHEMETIC OPERATIONS
+
+section .data
+
+result db 0 
+
+section .bss
+section .text
+global _start 
+
+_start:
+
+mov eax, num1 4A
+mov ebx, num2 6B
+
+
+add al, bl 
+
+
+mov [result], al 
+
+
+mov eax, 1 
+xor ebx, ebx 
+int 0x80
